@@ -1,0 +1,482 @@
+#screen{
+       	  position: absolute;
+       	  top: 50px;
+       	  left: 250px;
+       	  height: 500px;
+       	  width: 500px;
+       	  background-color: white;
+       }
+
+       #tab1{
+       	  position: absolute;
+       	  top: 50px;
+       	  left: 250px;
+       	  height: 500px;
+       	  width: 5px;
+       	  background-color: black;
+       }
+
+        #tab2{
+       	  position: absolute;
+       	  top: 50px;
+       	  left: 250px;
+       	  height: 5px;
+       	  width: 500px;
+       	  background-color: black;
+       }
+
+        #tab3{
+       	  position: absolute;
+       	  top: 50px;
+       	  left: 750px;
+       	  height: 500px;
+       	  width: 5px;
+       	  background-color: black;
+       }
+
+        #tab4{
+       	  position: absolute;
+       	  top: 545px;
+       	  left: 255px;
+       	  height: 5px;
+       	  width: 500px;
+       	  background-color: black;
+       }
+
+       #barata{
+       	  display: block;
+       	  position: absolute;
+       	  top: 60px;
+       	  left: 350px;
+       	  z-index: 2;
+       }
+
+       #baratamorta{
+       	  display: none;
+       	  position: absolute;
+       	  top: 20px;
+       	  left: 10px;
+       }
+
+       #baratamoeda{
+       	  display: none;
+       	  position: absolute;
+       	  top: 60px;
+       	  left: 350px;
+       	  z-index: 2;
+       }
+
+       #baratamoedawin{
+       	  display: block;
+       	  position: absolute;
+       	  top: 20px;
+       	  left: 10px;
+       }
+
+       #w{
+       	 display: block;
+       	 position: absolute;
+       	 top: 575px;
+         left: 500px;
+       }
+
+       #w1{
+       	 display: none;
+       	 position: absolute;
+       	 top: 575px;
+         left: 500px;
+       }
+
+       #d{
+       	 display: block;
+         position: absolute;
+       	 top: 600px;
+         left: 550px;
+       }
+
+       #d1{
+       	 display: none;
+       	 position: absolute;
+       	 top: 600px;
+         left: 550px;
+       }
+
+       #a{
+       	 display: block;
+         position: absolute;
+       	 top: 600px;
+         left: 450px;
+       }
+
+       #a1{
+       	 display: none;
+       	 position: absolute;
+       	 top: 600px;
+         left: 450px;
+       }
+
+       #s{
+       	 display: block;
+         position: absolute;
+       	 top: 600px;
+         left: 500px;
+       }
+
+       #s1{
+       	 display: none;
+         position: absolute;
+       	 top: 600px;
+         left: 500px;
+       }
+
+
+       #pista{
+       	 position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 495px;
+         background-color: #737373;
+         z-index: 0;
+       }
+
+       #pista2{
+       	 position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 495px;
+         background-color: #737373;
+         z-index: 0;
+       }
+
+       #car1{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1a{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1b{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1c{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1d{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1e{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1f{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car1g{
+       	 display: none;
+         position: absolute;
+       	 top: 200px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2a{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2b{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2c{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2d{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2e{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #car2f{
+       	 display: none;
+         position: absolute;
+       	 top: 350px;
+         left: 255px;
+         height: 55px;
+       	 width: 50px;
+         background-color: #737373;
+         z-index: 1;
+       }
+
+       #gamewin{
+       	 display: block;
+       	 position: absolute;
+         top: 50px;
+         left: 110px;
+         height: 55px;
+       	 width: 50px;
+         font-size: 20pt;
+         font-family: sans-serif;
+         color: #009933;
+       }
+
+
+       #gameover{
+       	 display: none;
+         position: absolute;
+       	 top: 50px;
+         left: 110px;
+         height: 55px;
+       	 width: 50px;
+         font-size: 20pt;
+         font-family: sans-serif;
+         color: red;
+       }
+
+       .fundo{
+       	 position: absolute;
+       	 top: 55px;
+       	 left: 255px;
+       	 width: 495px;
+       	 height: 145px;
+       	 z-index: 0;
+       }
+
+       .fundo2{
+         position: absolute;
+       	 top: 255px;
+       	 left: 255px;
+       	 width: 495px;
+       	 height: 95px;
+       	 z-index: 0;
+       }
+
+       .fundo3{
+         position: absolute;
+       	 top: 405px;
+       	 left: 255px;
+       	 width: 495px;
+       	 height: 140px;
+       	 z-index: 0;
+       }
+
+       #coin, #coin2, #coin3, #coin4, #coin5{
+       	 display: block;
+         position: absolute;
+       	 top: 455px;
+       	 left: 360px;
+       	 width: 50px;
+       	 height: 50px;
+       	 z-index: 2;
+       }
+
+       #coin2{
+         left: 635px;
+       }
+
+       #coin3{
+         left: 550px;
+       }
+
+       #coin4{
+         left: 490px;
+       }
+
+       #coin5{
+         left: 300px;
+       }
+
+       #bank{
+       	 display: block;
+       	 position: absolute;
+       	 top: 70px;
+       	 left: 580px;
+       	 width: 100px;
+       	 height: 100px;
+       	 z-index: 0;
+       }
+
+       #audio{
+       	 display: none;
+       	 position: absolute;
+       	 top: 10px;
+       	 left: 700px;
+       }
+
+       #pont{
+       	 position: absolute;
+       	 top: 50px;
+         left: 265px;
+         font-size: 14pt;
+         font-family: sans-serif;
+         z-index: 2;
+       }
+
+       #valor{
+       	 position: absolute;
+       	 top: 50px;
+       	 left: 365px;
+       	 font-size: 14pt;
+       	 font-family: sans-serif;
+       	 z-index: 2;
+       }
+
+       #endgame{
+         display: none;
+         position: absolute;
+         height: 250px;
+         width: 300px;
+         top: 170px;
+         left: 350px;
+         border-style: inset;
+         border-width: 2px;
+         border-radius: 5px;
+         background-color: grey;
+         z-index: 3;
+       }
+
+       #returnimg{
+         display: block;
+         position: absolute;
+         height: 40px;
+         width: 40px;
+         top: 180px;
+         left: 30px;
+         border-style: outset;
+         border-width: 2px;
+         border-radius: 5px;
+         background-color: white;
+       }
+
+       #homeimg{
+         display: block;
+         position: absolute;
+         height: 40px;
+         width: 40px;
+         top: 180px;
+         left: 130px;
+         border-style: outset;
+         border-width: 2px;
+         border-radius: 5px;
+         background-color: white;
+       }
+
+       #nextimg{
+         display: block;
+         position: absolute;
+         height: 40px;
+         width: 40px;
+         top: 180px;
+         left: 230px;
+         border-style: outset;
+         border-width: 2px;
+         border-radius: 5px;
+         background-color: white;
+       }
