@@ -66,61 +66,81 @@
        	  z-index: 2;
        }
 
+       
+
        #w{
-       	 display: block;
-       	 position: absolute;
-       	 top: 575px;
+         display: block;
+         position: absolute;
+         top: 600px;
          left: 500px;
+         width: 100px;
+         height: 100px;
        }
 
        #w1{
-       	 display: none;
-       	 position: absolute;
-       	 top: 575px;
+         display: none;
+         position: absolute;
+         top: 600px;
          left: 500px;
+         width: 100px;
+         height: 100px;
        }
 
        #d{
-       	 display: block;
+         display: block;
          position: absolute;
-       	 top: 600px;
-         left: 550px;
+         top: 700px;
+         left: 600px;
+         width: 100px;
+         height: 100px;
        }
 
        #d1{
-       	 display: none;
-       	 position: absolute;
-       	 top: 600px;
-         left: 550px;
+         display: none;
+         position: absolute;
+         top: 700px;
+         left: 600px;
+         width: 100px;
+         height: 100px;
        }
 
        #a{
-       	 display: block;
+         display: block;
          position: absolute;
-       	 top: 600px;
-         left: 450px;
+         top: 700px;
+         left: 400px;
+         width: 100px;
+         height: 100px;
        }
 
        #a1{
-       	 display: none;
-       	 position: absolute;
-       	 top: 600px;
-         left: 450px;
+         display: none;
+         position: absolute;
+         top: 700px;
+         left: 400px;
+         width: 100px;
+         height: 100px;
        }
 
        #s{
-       	 display: block;
+         display: block;
          position: absolute;
-       	 top: 600px;
+         top: 700px;
          left: 500px;
+         width: 100px;
+         height: 100px;
        }
 
        #s1{
-       	 display: none;
+         display: none;
          position: absolute;
-       	 top: 600px;
+         top: 700px;
          left: 500px;
+         width: 100px;
+         height: 100px;
        }
+
+
 
 
        #pista{
