@@ -118,8 +118,9 @@ var x = 350;
              check_moeda = false;
              pontuacao = pontuacao + 10;
              document.getElementById("valor").innerHTML = pontuacao;
-
-
+            }
+                
+                
              if(counter == 50){
                 document.getElementById("endgame").style.display = "block";
     		        document.getElementById("baratamoedawin").style.display = "block";
@@ -127,7 +128,6 @@ var x = 350;
     		        document.getElementById("baratamorta").style.display = "none";
     		        document.getElementById("gameover").style.display = "none";
               }
-            }
 
 
             
