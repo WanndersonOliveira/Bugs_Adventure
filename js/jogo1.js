@@ -121,7 +121,7 @@ var x = 350;
             }
                 
                 
-             if(counter == 50){
+             if(counter > 40){
                 document.getElementById("endgame").style.display = "block";
     		        document.getElementById("baratamoedawin").style.display = "block";
     		        document.getElementById("gamewin").style.display = "block";
