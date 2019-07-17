@@ -8,6 +8,9 @@
         var coin_array = [1, 1, 1, 1, 1, 1, 1, 1];
         var counter = 0;
         var pontuacao = 0;
+        var morte = false;
+        var timer;
+        var timerVictory;
         var check_moeda = false;
 
            
@@ -28,46 +31,67 @@
          *    car1_x - 300 = Posição do carro 1 - 300 ou Posição do carro 2 - 100, *    ou seja, quando o carro 2 tiver na posição 100px (left), aparecerá o
          *    segundo carro no limite left da tela.
          */
+
+         function checaVitoria(){
+            if(pontuacao == 80){
+                document.getElementById("barata").style.display = "none";
+                document.getElementById("baratamoeda").style.display = "none";
+                document.getElementById("endgame").style.display = "block";
+                document.getElementById("baratamorta").style.display = "none";
+                document.getElementById("gameover").style.display = "none";
+                document.getElementById("gamewin").style.display = "block";
+                document.getElementById("baratamoedawin").style.display = "block";
+                document.getElementById("next").style.display = "block";
+                document.getElementById("a").style.display = "none";
+                document.getElementById("s").style.display = "none";
+                document.getElementById("w").style.display = "none";
+                document.getElementById("d").style.display = "none";
+                document.getElementById("a1").style.display = "block";
+                document.getElementById("s1").style.display = "block";
+                document.getElementById("w1").style.display = "block";
+                document.getElementById("d1").style.display = "block";
+
+                document.getElementById("audio").src="../audio/victory.mp3";
+                document.getElementById("audio").loop="false";
+
+                clearInterval(timerVictory);
+            }
+        }
+
+        function checaMorte(){
+            if(morte == true){
+                document.getElementById("barata").style.display = "none";
+                document.getElementById("baratamoeda").style.display = "none";
+                document.getElementById("endgame").style.display = "block";
+                document.getElementById("baratamorta").style.display = "block";
+                document.getElementById("gameover").style.display = "block";
+                document.getElementById("gamewin").style.display = "none";
+                document.getElementById("baratamoedawin").style.display = "none";
+                document.getElementById("next").style.display = "none";
+                document.getElementById("a").style.display = "none";
+                document.getElementById("s").style.display = "none";
+                document.getElementById("w").style.display = "none";
+                document.getElementById("d").style.display = "none";
+                document.getElementById("a1").style.display = "block";
+                document.getElementById("s1").style.display = "block";
+                document.getElementById("w1").style.display = "block";
+                document.getElementById("d1").style.display = "block";
+
+                document.getElementById("audio").src="../audio/morte.mp3";
+                document.getElementById("audio").loop="false";
+
+                clearInterval(timer);
+            }
+        }
         
         function teste(){  //Teste de caso para batida nos carros, coleta e depósito de moedas
-           if((x < (car1_x+25) & x > (car1_x - 50) & y > 80 & y < 130) | (x < ((car1_x - 200)+25) & x > ((car1_x - 200) - 50) & y > 80 & y < 130) | (x < ((car1_x - 300)+25) & x > ((car1_x - 300) - 50) & y > 80 & y < 130) | (x < ((car1_x - 400)+25) & x > ((car1_x - 400) - 50) & y > 80 & y < 130) | (x < ((car1_x - 600)+25) & x > ((car1_x - 600) - 50) & y > 80 & y < 130) | (x < ((car1_x - 700)+25) & x > ((car1_x - 700) - 50) & y > 80 & y < 130) | (x < ((car1_x - 900)+25) & x > ((car1_x - 900) - 50) & y > 80 & y < 130)){
-    		  document.getElementById("barata").style.display = "none";
-    		  document.getElementById("baratamoeda").style.display = "none";
-    		  document.getElementById("endgame").style.display = "block";
-    		  document.getElementById("baratamorta").style.display = "block";
-    		  document.getElementById("gameover").style.display = "block";
-    		  document.getElementById("gamewin").style.display = "none";
-    		  document.getElementById("baratamoedawin").style.display = "none";
-    		  document.getElementById("next").style.display = "none";
-    		  document.getElementById("a").style.display = "none";
-    		  document.getElementById("s").style.display = "none";
-    		  document.getElementById("w").style.display = "none";
-    		  document.getElementById("d").style.display = "none";
-    		  document.getElementById("a1").style.display = "block";
-    		  document.getElementById("s1").style.display = "block";
-    		  document.getElementById("w1").style.display = "block";
-    		  document.getElementById("d1").style.display = "block";
-    	    }
+          if((x < (car1_x+25) & x > (car1_x - 50) & y > 80 & y < 130) | (x < ((car1_x - 200)+25) & x > ((car1_x - 200) - 50) & y > 80 & y < 130) | (x < ((car1_x - 300)+25) & x > ((car1_x - 300) - 50) & y > 80 & y < 130) | (x < ((car1_x - 400)+25) & x > ((car1_x - 400) - 50) & y > 80 & y < 130) | (x < ((car1_x - 600)+25) & x > ((car1_x - 600) - 50) & y > 80 & y < 130) | (x < ((car1_x - 700)+25) & x > ((car1_x - 700) - 50) & y > 80 & y < 130) | (x < ((car1_x - 900)+25) & x > ((car1_x - 900) - 50) & y > 80 & y < 130)){
+    		    morte = true;  
+          }
 
     	    if((x < (car2_x+20) & x > (car2_x - 20) & y > 190 & y < 230) | (x < ((car2_x - 200)+20) & x > ((car2_x - 200) - 20) & y > 190 & y < 230) | (x < ((car2_x - 300)+20) & x > ((car2_x - 300) - 20) & y > 190 & y < 210) | (x < ((car2_x - 400)+20) & x > ((car2_x - 400) - 20) & y > 190 & y < 230) | (x < ((car2_x - 600)+20) & x > ((car2_x - 600) - 20) & y > 190 & y < 230) | (x < ((car2_x - 700)+20) & x > ((car2_x - 700) - 20) & y >190 & y < 230) | (x < ((car2_x - 900)+20) & x > ((car2_x - 900) - 20) & y > 190 & y < 230)){
-
-              document.getElementById("barata").style.display = "none";
-              document.getElementById("baratamoeda").style.display = "none";
-              document.getElementById("endgame").style.display = "block";
-    		  document.getElementById("baratamorta").style.display = "block";
-    		  document.getElementById("gameover").style.display = "block";
-    		  document.getElementById("gamewin").style.display = "none";
-    		  document.getElementById("baratamoedawin").style.display = "none";
-    		  document.getElementById("next").style.display = "none";
-    		  document.getElementById("a").style.display = "none";
-    		  document.getElementById("s").style.display = "none";
-    		  document.getElementById("w").style.display = "none";
-    		  document.getElementById("d").style.display = "none";
-    		  document.getElementById("a1").style.display = "block";
-    		  document.getElementById("s1").style.display = "block";
-    		  document.getElementById("w1").style.display = "block";
-    		  document.getElementById("d1").style.display = "block";
-    	    }
+            morte = true;
+          }
              
             //Coletando moedas
              
@@ -146,11 +170,11 @@
              
 
               if(pontuacao == 80){
-                 document.getElementById("endgame").style.display = "block";
-    		     document.getElementById("baratamoedawin").style.display = "block";
-    		     document.getElementById("gamewin").style.display = "block";
-    		     document.getElementById("baratamorta").style.display = "none";
-    		     document.getElementById("gameover").style.display = "none";
+                document.getElementById("endgame").style.display = "block";
+    		        document.getElementById("baratamoedawin").style.display = "block";
+    		        document.getElementById("gamewin").style.display = "block";
+    		        document.getElementById("baratamorta").style.display = "none";
+    		        document.getElementById("gameover").style.display = "none";
               }
 
 
@@ -161,7 +185,8 @@
         setInterval(teste, 500);
         setInterval(mov_car1, 500);
         setInterval(mov_car2, 500);
-
+        timer = setInterval(checaMorte, 500);
+        timerVictory = setInterval(checaVitoria, 500);
 
     	function esquerda(){
     		if(x > 230){
